@@ -1,0 +1,36 @@
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    height: 8vh;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3:hover {
+    letter-spacing: 1px;
+}
+
+.background img {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+}
+
+.img:hover {
+    transform: rotateY(180deg);
+}
+
+.transition {
+    transition: cubic-bezier(0.46, 0, 0, 1) all 0.55s;
+}
