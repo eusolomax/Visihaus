@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o/public_api';
+import { post } from "../database/post"
 import { CardNftComponent } from '../card-nft/card-nft.component';
 
 @Component({
@@ -8,13 +9,16 @@ import { CardNftComponent } from '../card-nft/card-nft.component';
   styleUrls: ['./home-getinspired.component.css']
 })
 export class HomeGetinspiredComponent {
+  data: any = post.user
+
   customOptions: OwlOptions = {
     loop: true,
+    autoplay: true,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
-    dots: true,
-    navSpeed: 700,
+    dots: false,
+    navSpeed: 1000,
     navText: ['', ''],
     responsive: {
       0: {

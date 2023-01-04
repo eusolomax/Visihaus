@@ -1,17 +1,20 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css";
+
+
 .background {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-color: rgb(10, 10, 10);
 }
 
 .titleBackground {
     display: flex;
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     background-color: rgb(10, 10, 10);
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .titleBackground h1 {
@@ -33,8 +36,6 @@ span:hover {
     letter-spacing: 1px;
 }
 
-.roll {
-    margin-top: 30px;
-    width: 100%;
-    height: 40vh;
+.carouselDiv {
+    margin-top: 50px;
 }

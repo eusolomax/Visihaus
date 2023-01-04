@@ -14,6 +14,7 @@ export class HomeTopComponent implements AfterViewInit {
   }
 
   WelcomeTitleShow(){
+    console.log("foi")
     let welcomeTitle = "Welcome to the Artists Shelter"
     let array = welcomeTitle.split('')
     let i = 0

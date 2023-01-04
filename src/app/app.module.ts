@@ -7,6 +7,8 @@ import { HomeTopComponent } from './home-top/home-top.component';
 import { HomeHeadComponent } from './home-head/home-head.component';
 import { HomeGetinspiredComponent } from './home-getinspired/home-getinspired.component';
 import { CardNftComponent } from './card-nft/card-nft.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { CardNftComponent } from './card-nft/card-nft.component';
     CardNftComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     CarouselModule
