@@ -10,13 +10,9 @@
 
 .letter-background {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     background-color: rgb(10, 10, 10);
     align-items: center;
     margin-top: 20px;
-}
-
-.background h1 {
-    margin-left: 380px;
 }

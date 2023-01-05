@@ -3,6 +3,11 @@
     height: auto;
     border-radius: 20px;
     background-color: rgb(0, 0, 0);
+    transition: cubic-bezier(0.46, 0, 0, 1) all 0.55s;
+}
+
+.background:hover {
+    box-shadow: 0 0 5px rgba(150, 150, 150, 0.082);
 }
 
 .imgDiv img {
@@ -26,7 +31,7 @@
     opacity: 85%;
 
     transition: cubic-bezier(0.46, 0, 0, 1) all 0.55s;
-    background-color: rgba(0, 0, 0, 0.247);
+    background-color: rgba(0, 0, 0, 0.281);
 }
 
 .content:hover {
@@ -39,21 +44,22 @@
     justify-content: center;
     align-items: center;
 
-    width: 93%;
-    height: 4vh;
+    width: 90%;
+    margin-top: 3px;
+    height: 5vh;
     background-color: rgba(0, 0, 0, 0.747);
-    margin-top: 5px;
     border-radius: 15px;
     -webkit-user-drag: none;
     user-select: none;
 }
 
 .titleDiv h1 {
+    font-family: 'Quicksand', sans-serif !important;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size: 17px;
+    font-size: 20px;
     max-width: auto;
 }
 
@@ -62,11 +68,14 @@
     padding: 3px 10px;
     width: 100%;
     height: 12vh;
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(0, 0, 0, 0.877);
     flex-direction: column;
     justify-content: space-between;
-    cursor: default !important;
-    border-radius: 0 0 20px 20px;
+    border-radius: 5% 5% 20px 20px;
+}
+
+.contentBottom h2 {
+    font-family: 'Quicksand', sans-serif !important;
 }
 
 .contentBottom h2:nth-child(1) {
@@ -76,9 +85,13 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size: 23px;
+    font-size: 20px;
     max-width: auto;
-    text-shadow: 0 0 10px rgb(112, 112, 112)
+    text-shadow: 0 0 10px rgb(112, 112, 112);
+}
+
+.contentBottom a {
+    text-decoration: none;
 }
 
 .valueDiv {
@@ -89,4 +102,5 @@
 
 .valueDiv h2 {
     text-shadow: 0 0 10px rgb(58, 58, 58);
+    font-size: 20px !important;
 }

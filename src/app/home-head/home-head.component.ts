@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-head.component.css']
 })
 export class HomeHeadComponent {
+  alertLogin(){
+    alert("login")
+  }
 
+  alertSignUp(){
+    alert("Sign Up")
+  }
 }

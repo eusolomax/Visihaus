@@ -8,4 +8,5 @@
     list-style: none;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 300;
+    cursor: none !important;
 }

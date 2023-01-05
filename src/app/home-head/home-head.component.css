@@ -1,11 +1,46 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
 .background {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
     background-color: rgb(17, 17, 17);
-    width: 100%;
+    width: 50%;
     height: 8vh;
+}
+
+.background2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: 50%;
+    background-color: rgb(17, 17, 17);
+    font-size: 20px;
+}
+
+.background2 button {
+    height: 27px;
+    padding: 2px 5px;
+    width: auto;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.171);
+    font-size: 16px;
+    cursor: pointer;
+    transition: cubic-bezier(0.46, 0, 0, 1) all 0.55s;
+}
+
+.background2 button:hover {
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.background2 span {
+    margin: 0 4px;
+    cursor: default;
 }
 
 h3 {
