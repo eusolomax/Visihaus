@@ -15,8 +15,11 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "preserve",
+    
+    // "emitDeclarationOnly": true,
+    "composite": true,
+    "noEmit": true,
 
     /* Linting */
     "strict": true,
