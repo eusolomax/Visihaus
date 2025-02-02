@@ -1,0 +1,19 @@
+{
+  "name": "visihaus-backend",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "bun --hot index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "env": "^0.0.2",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
