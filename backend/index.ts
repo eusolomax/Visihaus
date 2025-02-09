@@ -1,8 +1,24 @@
-// importando os pacotes para uso no arquivo index.js
-const express = require('express');
+import { PrismaClient } from '@prisma/client'
 
+const express = require('express');
 const app = express();
 const port = 8080;
+const prisma = new PrismaClient()
+
+async function main() {
+  console.log('miann')
+  // ... you will write your Prisma Client queries here
+}
+
+main()
+  .then(async () => {
+    await prisma.$disconnect()
+  })
+  .catch(async (e) => {
+    console.error(e)
+    await prisma.$disconnect()
+    process.exit(1)
+  })
 
 app.get("/", (req: any, res: any) => {
   res.send("Hello World!");
