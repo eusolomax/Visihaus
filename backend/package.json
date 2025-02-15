@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@prisma/client": "6.3.1",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.13.1",
     "env": "^0.0.2",
     "express": "^4.21.2",
@@ -22,6 +23,7 @@
     "typescript": "^5.7.3"
   },
   "imports": {
+    "#prisma/*": "./prisma/*",
     "#controllers/*": "./controllers/*",
     "#middlewares/*": "./middlewares/*",
     "#models/*": "./models/*",
