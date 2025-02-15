@@ -20,5 +20,12 @@
     "prisma": "^6.3.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
+  },
+  "imports": {
+    "#controllers/*": "./controllers/*",
+    "#middlewares/*": "./middlewares/*",
+    "#models/*": "./models/*",
+    "#routes/*": "./routes/*",
+    "#services/*": "./services/*"
   }
 }
