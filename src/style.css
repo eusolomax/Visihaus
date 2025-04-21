@@ -77,3 +77,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.d-flex-all {
+  display: flex !important;
+  align-items: center m !important;
+  justify-content: center !important;
+}
