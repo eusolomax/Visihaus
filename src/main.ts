@@ -1,17 +1,16 @@
 import { createApp } from 'vue'
 import router from './router'
 import Base from './views/Base.vue'
+import vuetify from './utils/vuetify'
+import "./style.css";
 
-// Vuetify
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 
-const vuetify = createVuetify({
-  components,
-  directives,
-})
+
+library.add(fas) // Include needed solid icons
+library.add(far) // Include needed regular icons
 
 createApp(Base)
   .use(vuetify)
