@@ -1,7 +1,9 @@
 <template>
-  <MainHead />
-  <v-divider :thickness="1" class="mx-10 mb-8" />
-  <MainContent />
+  <div class="px-16">
+    <MainHead />
+    <v-divider :thickness="1" class="mx-10 mb-8" />
+    <MainContent />
+  </div>
 </template>
 
 <script lang="ts" setup>
