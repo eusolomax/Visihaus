@@ -20,14 +20,16 @@ Visihaus is a modern platform that allows artists to showcase their work and con
 ## 🛠️ Tech Stack
 ### **Frontend**  
 - Vue.js  
-- Tailwind CSS  
+- Vuetify  
 
 ### **Backend**  
 - Express.js  
-- Prisma ORM  
-- PostgreSQL  
+- TypeORM    
 
-### **Cloud & Deployment**  
-- AWS EC2 (for hosting)
-- AWS S3 (for cloud storage)  
-- CI/CD for automated deployments
+### **Database**
+- PostgreSQL
+
+### **Cloud & DevOps**  
+- AWS EC2
+- AWS S3  
+- CI/CD
