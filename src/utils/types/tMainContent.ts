@@ -1,0 +1,1 @@
+export type TogglePosts = 'all' | 'photos' | 'videos'
