@@ -13,10 +13,13 @@
       <v-btn variant="text" icon="mdi-filter-variant" />
     </div>
   </div>
+
+  <MainCarousel :columns="4" />
 </template>
 
 <script setup lang="ts">
 import { TogglePosts } from '@/utils/types/tMainContent';
+import MainCarousel from '@/components/MainCarousel.vue';
 import { ref } from 'vue';
 
 const vTogglePosts = ref<TogglePosts>('all');
