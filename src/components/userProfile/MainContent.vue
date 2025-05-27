@@ -1,5 +1,5 @@
 <template>
-  <div class="px-14 w-100 d-flex align-center justify-space-between bg-red">
+  <div class="px-14 w-100 d-flex align-center justify-space-between">
     <h1 class="vh-title">Posts</h1>
 
     <v-btn-toggle v-model="vTogglePosts" variant="plain">

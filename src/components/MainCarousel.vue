@@ -1,8 +1,8 @@
 <template>
-  <div class="w-100 bg-red">
+  <div class="w-100 ">
     <div class="px-9 w-100 grid">
       <div v-for="n in item">
-        <div :style="{ 'height': n + 'px' }" class="bg-blue">
+        <div :style="{ 'height': n + 'px' }" class="bg-grey-darken-4 rounded">
         </div>
       </div>
     </div>
@@ -14,8 +14,8 @@ import { ref } from 'vue';
 
 const item = ref([
   400,
-  350,
   400,
+  320,
   290,
   590,
   290,
@@ -44,7 +44,7 @@ defineProps<{ columns: number }>()
 }
 
 .grid>* {
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
 }
 
 /* Responsividade */
