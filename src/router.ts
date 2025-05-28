@@ -4,32 +4,30 @@ const routes = [
   {
     path: '/',
     component: () => import('@/views/Base.vue'),
-    redirect: { path: "/home" },
-    name: 'Base',
+    redirect: { name: 'Home' },
     children: [
       {
-        path: '/home',
+        path: 'home',
         component: () => import('@/views/Home.vue'),
-        name: 'Home',
+        name: 'Home'
       },
       {
-        path: '/user/:username',
+        path: 'user/:username',
         component: () => import('@/views/UserProfile.vue'),
-        name: 'Home',
+        name: 'UserProfile'
       },
       {
-        path: '/:pathMatch(.*)*',
+        path: ':pathMatch(.*)*',
         component: () => import('@/components/PageNotFound.vue'),
-        name: 'pageNotFound',
+        name: 'PageNotFound'
       }
     ]
-  },
+  }
 ]
-
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 })
 
 export default router
