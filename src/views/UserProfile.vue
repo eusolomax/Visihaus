@@ -1,6 +1,6 @@
 <template>
   <MainHead />
-  <v-divider :thickness="1" class="mx-10 mb-8" />
+  <v-divider :thickness="1" class="mx-10 mb-6 " />
   <MainContent />
 </template>
 

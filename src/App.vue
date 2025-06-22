@@ -6,6 +6,6 @@
 
 <style scoped>
 .vh-margin {
-  margin: 0 100px
+  margin: 0 130px
 }
 </style>
