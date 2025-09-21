@@ -17,7 +17,7 @@
 
   <div style="height: 200px;" class="d-flex align-start justify-space-between w-100 pa-4">
     <div class="w-40">
-      <v-btn :rounded="false" density="comfortable" prepend-icon="mdi-account-multiple-plus-outline" width="130"
+      <v-btn :rounded="false" density="comfortable" prepend-icon="mdi-account-multiple-plus-outline"
         size="x-large">Follow</v-btn>
       <v-btn :rounded="false" icon="mdi-email-outline" density="compact" class="ml-2" />
     </div>
@@ -32,7 +32,7 @@
       </div>
 
       <div class="d-flex flex-column">
-        <p class="font-italic opacity-60">"To live will be an awfully big adventure"</p>
+        <p class="font-italic opacity-60">{{ userData.quote }}</p>
         <div class="d-flex justify-end">
           <div v-for="social of userData.socials">
             <v-btn size="large" density="compact" variant="plain" :icon="'mdi-' + social.icon" />
