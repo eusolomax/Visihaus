@@ -4,22 +4,22 @@ const routes = [
   {
     path: '/',
     component: () => import('@/views/Base.vue'),
-    redirect: { name: 'Home' },
+    redirect: { name: 'home' },
     children: [
       {
         path: 'home',
         component: () => import('@/views/Home.vue'),
-        name: 'Home'
+        name: 'home'
       },
       {
         path: 'user/:username',
         component: () => import('@/views/UserProfile.vue'),
-        name: 'UserProfile'
+        name: 'userProfile'
       },
       {
         path: ':pathMatch(.*)*',
         component: () => import('@/components/PageNotFound.vue'),
-        name: 'PageNotFound'
+        name: 'pageNotFound'
       }
     ]
   }
