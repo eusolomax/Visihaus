@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import router from './router'
-import Base from './views/Base.vue'
+import App from './App.vue'
 import vuetify from './utils/vuetify'
 import "./style.css";
 
@@ -12,7 +12,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 library.add(fas) // Include needed solid icons
 library.add(far) // Include needed regular icons
 
-createApp(Base)
+createApp(App)
   .use(vuetify)
   .use(router)
   .mount('#app')
