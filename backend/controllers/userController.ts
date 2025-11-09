@@ -1,15 +1,16 @@
 import type { Request, Response } from 'express';
-import { checkEmailExists, createUser } from '#services/createUser.ts';
+import { checkEmailExists, checkUsernameExists, createUser } from '#services/createUser.ts';
 import type { User } from '#models/User.ts';
 
 export const registerUser = async (req: Request, res: Response) => {
   try {
-    const { email, password, name } = req.body;
+    const { email, password, name, username, shortDesc, profilePic } = req.body;
 
-    if (!email || !password || !name) return res.status(400).json({ error: 'Missing fields.' })
-    if (await checkEmailExists(email)) return res.status(400).json({ error: 'User already exists.' })
+    if (!email || !password || !name || !username || !shortDesc) return res.status(400).json({ error: 'Missing fields.' })
+    if (await checkEmailExists(email)) return res.status(400).json({ error: 'Email already exists.' })
+    if (await checkUsernameExists(email)) return res.status(400).json({ error: 'Username already exists.' })
 
-    const user: User = await createUser(email, password, name);
+    const user: User = await createUser(email, password, name, username, shortDesc, profilePic);
     res.status(201).json(user);
 
   } catch (error) { res.status(500).json({ error: error }) }
