@@ -13,15 +13,20 @@ const routes = [
       },
       {
         path: 'user/:username',
-        component: () => import('@/views/UserProfile.vue'),
+        component: () => import('@/views/user/UserProfile.vue'),
         name: 'userProfile'
-      },
-      {
-        path: ':pathMatch(.*)*',
-        component: () => import('@/components/PageNotFound.vue'),
-        name: 'pageNotFound'
       }
     ]
+  },
+  {
+    path: '/register',
+    component: () => import('@/views/user/Register.vue'),
+    name: 'user-register'
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('@/components/PageNotFound.vue'),
+    name: 'pageNotFound'
   }
 ]
 

@@ -8,7 +8,7 @@ export const registerUser = async (req: Request, res: Response) => {
 
     if (!email || !password || !name || !username || !shortDesc) return res.status(400).json({ error: 'Missing fields.' })
     if (await checkEmailExists(email)) return res.status(400).json({ error: 'Email already exists.' })
-    if (await checkUsernameExists(email)) return res.status(400).json({ error: 'Username already exists.' })
+    if (await checkUsernameExists(username)) return res.status(400).json({ error: 'Username already exists.' })
 
     const user: User = await createUser(email, password, name, username, shortDesc, profilePic);
     res.status(201).json(user);
